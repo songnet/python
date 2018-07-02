@@ -88,4 +88,9 @@ and or not 或 与 非
 '''
 in 、not in
 '''
-#
+#通过索引迭代循环 for item in items、range 开始-结束、len() 返回长度
+'''
+fruits = ['banana','apple','mango'];
+for index in range(len(fruits)):
+    print('current fruit:',fruits[index]);
+'''
