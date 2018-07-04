@@ -1,2 +1,8 @@
-www.runoob.com!
-Very good site!
+﻿.py =>py解释器=》字节码文件=》py解释器=》二进制文件=》内存、运行=》打印结果
+
+python文件类型
+	字节码文件 .pyc   提高加载效率 但是运行效率和.py一致
+		 .pyo  是优化编译的.pyc文件
+
+eclipse开发python配置
+	help=》install new software  : PyDev https://pydev.org/updates
