@@ -1,12 +1,20 @@
 '''
-python 3.x 连接mysql https://www.cnblogs.com/kungfupanda/p/5774917.html
-1.安装python-3.6.0.exe
+python 3.6 连接mysql https://www.cnblogs.com/kungfupanda/p/5774917.html
+1.本机安装 mysql
+2.安装python-3.6.0.exe
+3.安装 mysql-connector-python-8.0.11-py3.6-windows-x86-64bit.msi https://dev.mysql.com/downloads/connector/python/
+4.下载VC++ 6.0
+5.pip install mysql-python
+
+****** Microsoft Visual C++ 14.0 is required  https://blog.csdn.net/TH_NUM/article/details/77095177
+
 '''
 import mysql.connector;
 import sys,os;
 
 user = 'root'
-pwd  = '123.0'
+#pwd  = '123.0' 笔记本
+pwd  = 'wocao123.0' # 公司笔记本
 host = '127.0.0.1'
 db   = 'test'
 
