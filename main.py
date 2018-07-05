@@ -1,6 +1,7 @@
 
 # 导入整个文件
-import function;
+import function
+import transfermoney
 function.fun_print('第一个function!')
 
 # 只导入某个文件中的一个function from *** import
@@ -33,3 +34,20 @@ person = function.Person()
 person.childMethod()
 person.parentMethod()
 print(person.parentAtttr)
+
+# 调用转账方法
+
+if __name__ == '__main__':
+    source = 1
+    target = 2
+    money = 3000
+    db = pymysql.connect("localhost", "root", "toor", "spider", charset="utf8")
+    try_money = TransferMoney(db)
+    try:
+       try_money.transfer(source,target,money)
+    except Exception as e:
+        print(e)
+    finally:
+        db.close()
+
+transfermoney.TransferMoney()
